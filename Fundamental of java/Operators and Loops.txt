@@ -1,0 +1,36 @@
+1. What are the Conditional Operators in Java?
+Ans:Conditional Operators in Java: The conditional operators in Java are && (Logical AND), || (Logical OR), and ! (Logical NOT).
+
+2. What are the types of operators based on the number of operands?
+Ans: Types of operators based on the number of operands: There are three types - Unary (one operand, e.g., ++x), Binary (two operands, e.g., x+y), and Ternary (three operands, e.g., x ? y : z).
+
+3. What is the use of Switch case in Java programming?
+Ans:Use of Switch case in Java programming: The switch case is used for decision making in Java. It allows a variable to be tested for equality against a list of values.
+
+4. What are the priority levels of arithmetic operation in Java?
+Ans: Priority levels of arithmetic operation in Java: The priority levels, from highest to lowest, are: Parentheses, Unary operators, Multiplication/Division/Modulus, Addition/Subtraction.
+
+5. What are the conditional Statements and use of conditional statements in Java?
+Ans: Conditional Statements in Java: Conditional statements are used to perform different actions based on different conditions. The conditional statements in Java are: if, if-else, else-if, switch.
+
+
+6. What is the syntax of if else statement?
+Ans:
+if(condition) {
+  // code to be executed if condition is true
+} else {
+  // code to be executed if condition is false
+}
+
+7. What are the 3 types of iterative statements in java?
+Ans: The 3 types of iterative statements in Java: The three types of loops in Java are for, while, and do-while.
+
+8. Write the difference between for loop and do-while loop?
+Ans:Difference between for loop and do-while loop: A for loop is a control flow statement for specifying iteration, which allows code to be executed repeatedly. A do-while loop is similar to a while loop, except that the condition is checked at the end of the loop, so the loop will always run at least once.
+
+
+9. Write a program to print numbers from 1 to 10.
+Ans:
+for(int i = 1; i <= 10; i++) {
+  System.out.println(i);
+}
