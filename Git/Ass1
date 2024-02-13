@@ -1,0 +1,26 @@
+## Questions are
+
+1. What is Git?
+   Ans : Git is a distributed version control system that allows multiple people to work on a project at the same time. It tracks changes made to the project so that you can revert to any previous version.
+
+2. What do you understand by the term ‘Version Control System ?
+   Ans: A Version Control System (VCS) is a system that records changes to a file or set of files over time so that you can recall specific versions later. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, and more.
+
+3. What is GitHubC
+   Ans : GitHub is a web-based hosting service for version control using Git. It provides a Web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+
+4. Mention some popular Git hosting services?
+   Ans: Some popular Git hosting services include GitHub, GitLab, Bitbucket, and SourceForge.
+
+5. Different types of version control system ?
+   There are two main types of Version Control Systems (VCS): Local VCS vs Distributed VCS. A local VCS only allows one user to work on a project at any given time while
+   There are two main types of version control systems - Centralized Versioning Systems (CVS) and Distributed Versioning Systems (DVS). CVS keeps a single central copy of the code
+
+6. What benefits come with using GIT?
+   Ans: Some benefits of using Git include data redundancy and replication, high availability, only one .git directory per repository, superior disk utilization and network performance, collaboration friendly, and any sort of projects can use Git.
+
+7. What is a Git repository?
+   Ans: A Git repository is a virtual storage of your project. It allows you to save versions of your code, which you can access when needed.
+
+8. How can you initialize a repository in Git?
+   Ans: You can initialize a repository in Git by using the command git init in the terminal. This creates a new subdirectory named .git that contains all of your necessary repository files — a Git repository skeleton.
