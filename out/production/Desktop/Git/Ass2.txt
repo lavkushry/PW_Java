@@ -1,0 +1,41 @@
+1. 1.How to check if git is available on your system?
+Ans:You can check if Git is installed on your system by opening a terminal and typing git --version. This command will return the installed version of Git if it is available.
+              git --version
+
+2. 2.How to initialize a new Git repository?
+Ans: To initialize a new Git repository, navigate to your project directory in the terminal and type git init.
+
+cd your_project_directory
+git init
+
+3. 3.How to tell git about your name and email?
+Ans:  You can use the following commands in terminal or command prompt:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+4. How to add a file to the staging area?
+Ans: Use the following command:
+git add filename
+
+5. How to remove a file from the staging area?
+Ans: To remove a file from the staging area, use the git reset command followed by the file name.
+git reset filename
+
+6. How to make a commit?
+Ans: To make a commit, use the git commit command followed by a message describing the changes made.
+git commit -m "Your descriptive message here"
+
+
+7. How to send your changes to a remote repository?
+Ans: To send your changes to a remote repository, use the git push command. If you're pushing to the main branch, the command would be:
+First you need to set up a remote repository using GitHub (or Bitbucket, etc.). Then follow
+git push origin main
+
+8. What is the difference between clone and pull?
+Ans: Clone creates a local copy of a repository that is connected to a remote repository. Pull fetches the latest version of what’s in the remote repository and merges it with your local work
+
+# Clone a repository
+git clone https://github.com/user/repo.git
+
+# Pull latest changes
+git pull origin main

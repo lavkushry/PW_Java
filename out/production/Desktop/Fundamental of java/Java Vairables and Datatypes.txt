@@ -1,0 +1,22 @@
+1. What is statically typed and Dynamically typed Programming Language?
+Ans: Statically typed programming language checks the data type of a variable at compile time, whereas dynamically typed languages
+
+A statically typed programming language is one in which the data type of a variable must be declared before it can be used, while a dynamically typed language allows for variables to hold values of any
+
+2. What is the variable in Java?
+Ans: In java, a variable is an entity that holds a value which can be accessed by its name. It is created at compile time using keywords like int, float, double etc., or String for storing How does it work?
+
+3. How To Assign a Value To Variable?
+Ans: In java, we assign value to a variable using assignment operator "=". For example : int x = 5; Here 'x' is a variable and 5 is the assigned value.
+
+4. What are Primitive Data types in Java?
+Ans: In java, primitive data types are also known as simple or value-type data entities. They store a single value directly within an object. There are eight primitive data types in Java: byte, short
+
+5. What are the Identifiers in Java?
+Ans: An identifier (also known as an identifer) is a name given to any entity such as variables, methods, classes etc., in programming languages. In java, the rules for naming identifiers include
+
+6. List the Operators in Java?
+Ans: Arithmetic, Logical, Bitwise, Relational, Equality, Assignment etc.
+
+7. Explain about Increment and Decrement operators and give an examples
+Ans: The increment operator (++) adds one to the value of its operand. It can be used with both variables and array elements. If it is used with a variable, the result becomes the new value of their usage?
