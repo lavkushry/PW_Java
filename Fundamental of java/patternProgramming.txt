@@ -1,6 +1,279 @@
 1. Write a Program (WAP) to print Alphabets A, B, C, D, E, F, G, H, using pattern programming logic
+Ans:
+public class Main {
+    public static void main(String[] args) {
+        printA();
+        System.out.println();
+        printB();
+        System.out.println();
+        printC();
+        System.out.println();
+        printD();
+        System.out.println();
+        printE();
+        System.out.println();
+        printF();
+        System.out.println();
+        printG();
+        System.out.println();
+        printH();
+    }
+
+    static void printA() {
+        System.out.println("  *  ");
+        System.out.println(" * * ");
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*   *");
+    }
+
+    static void printB() {
+        System.out.println("**** ");
+        System.out.println("*   *");
+        System.out.println("**** ");
+        System.out.println("*   *");
+        System.out.println("**** ");
+    }
+
+    static void printC() {
+        System.out.println(" ****");
+        System.out.println("*    ");
+        System.out.println("*    ");
+        System.out.println("*    ");
+        System.out.println(" ****");
+    }
+
+    static void printD() {
+        System.out.println("**** ");
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("**** ");
+    }
+
+    static void printE() {
+        System.out.println("*****");
+        System.out.println("*    ");
+        System.out.println("*****");
+        System.out.println("*    ");
+        System.out.println("*****");
+    }
+
+    static void printF() {
+        System.out.println("*****");
+        System.out.println("*    ");
+        System.out.println("*****");
+        System.out.println("*    ");
+        System.out.println("*    ");
+    }
+
+    static void printG() {
+        System.out.println(" ****");
+        System.out.println("*    ");
+        System.out.println("*  **");
+        System.out.println("*   *");
+        System.out.println(" ****");
+    }
+
+    static void printH() {
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*   *");
+    }
+}
+
 2. Write a program to print triangle using star pattern programming logic
+Ans: public class Main {
+    public static void main(String[] args) {
+        int n = 5; // This is the number of rows in the triangle
+
+        // Print the triangle
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
 3. WAP to print
+ * * * * * * * * * * * * * * *
+ * * * * * * *   * * * * * * *
+ * * * * * *       * * * * * *
+ * * * * *           * * * * *
+ * * * *               * * * *
+ * * *                   * * *
+ * *                       * *
+ *                           *
+ *                           *
+ *                           *
+ *                           *
+ *                           *
+ *                           *
+ *                           *
+ * * * * * * * * * * * * * * *
+
+Ans: public class Pattern9 {
+    public static void main(String[] args) {
+        int n=15;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if( i+j <= (n-1)/2 || j-i>=(n-1)/2 || i==0 || i==n-1 || j==0 || j==n-1) {
+                    System.out.print("* ");
+                }
+                else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
 
 4. Write a program to print PW SKILLS using pattern programming logic.
+Ans: 
+public class Main {
+    public static void main(String[] args) {
+        printP();
+        System.out.println();
+        printW();
+        System.out.println();
+        System.out.println();
+        printS();
+        System.out.println();
+        printK();
+        System.out.println();
+        printI();
+        System.out.println();
+        printL();
+        System.out.println();
+        printL();
+        System.out.println();
+        printS();
+    }
+
+    static void printP() {
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*****");
+        System.out.println("*");
+        System.out.println("*");
+    }
+
+    static void printW() {
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("* * *");
+        System.out.println("** **");
+        System.out.println("*   *");
+    }
+
+    static void printS() {
+        System.out.println("*****");
+        System.out.println("*");
+        System.out.println("*****");
+        System.out.println("    *");
+        System.out.println("*****");
+    }
+
+    static void printK() {
+        System.out.println("*   *");
+        System.out.println("* *");
+        System.out.println("**");
+        System.out.println("* *");
+        System.out.println("*   *");
+    }
+
+    static void printI() {
+        System.out.println("*****");
+        System.out.println("  *");
+        System.out.println("  *");
+        System.out.println("  *");
+        System.out.println("*****");
+    }
+
+    static void printL() {
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*****");
+    }
+}
 5. Write a program to print your Full Name using pattern programming logic
+Ans: public class Main {
+    public static void main(String[] args) {
+        printL();
+        System.out.println();
+        printA();
+        System.out.println();
+        printV();
+        System.out.println();
+        printK();
+        System.out.println();
+        printU();
+        System.out.println();
+        printS();
+        System.out.println();
+        printH();
+    }
+
+    static void printL() {
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*");
+        System.out.println("*****");
+    }
+
+    static void printA() {
+        System.out.println("  *  ");
+        System.out.println(" * * ");
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*   *");
+    }
+
+    static void printV() {
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println(" * * ");
+        System.out.println("  *  ");
+        System.out.println("  *  ");
+    }
+
+    static void printK() {
+        System.out.println("*   *");
+        System.out.println("* *");
+        System.out.println("**");
+        System.out.println("* *");
+        System.out.println("*   *");
+    }
+
+    static void printU() {
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*****");
+    }
+
+    static void printS() {
+        System.out.println("*****");
+        System.out.println("*");
+        System.out.println("*****");
+        System.out.println("    *");
+        System.out.println("*****");
+    }
+
+    static void printH() {
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*   *");
+    }
+}
