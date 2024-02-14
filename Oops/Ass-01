@@ -1,0 +1,16 @@
+1. How to Create an Object in Java?
+Ans: To create a new object in Java, you need to follow the following steps:
+Step 1: Declare a class - In order to create an instance of any class in Java, you must first declare it using the "class" keyword followed by the name of the class
+
+2. What is the use of a new keyword in Java?
+Ans
+The "new" keyword in Java is used to instantiate or create objects from classes. It allocates
+
+3. What are the different types of variables in Java?
+Ans:
+
+4. What is the difference between Instance variable and Local variables?
+Ans:
+5. In which area memory is allocated for instance variable and local variable?
+Ans: Stack Memory - For local variable, Heap Memory - For instance variable.
+6. What is method overloading?
