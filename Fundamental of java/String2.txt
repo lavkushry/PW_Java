@@ -1,0 +1,45 @@
+1. Write a simple String program to take input from user
+Ans: Here is an example of a Python program that takes string input from the user and prints it back along
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String input = scanner.nextLine();
+        System.out.println("You entered: " + input);
+    }
+}
+
+2. How do you concatenate two strings in Java? Give an example?
+Ans: In Java, we can concatenate two strings using the '+' operator or by using the StringBuilder class. The following code demonstrates both methods:
+
+String str1 = "Hello";
+String str2 = "World";
+String str3 = str1 + " " + str2; // "Hello World"
+
+3. How do you find the length of a string in Java Explain with an example?
+Ans: In Java, we can use the `length()` method to get the length of a string. The `length()` method returns the number of characters (including spaces or special characters) in a given string
+int len = str.length();
+
+4. How do you compare two strings in Java? Give an Example
+Ans: You can use the equals() method or == operator to compare two Strings in Java. The equals() method compares the actual characters of two strings while the == operator checks if both objects point to?
+
+String str1 = "Hello";
+String str2 = "World";
+boolean isEqual = str1.equals(str2); // false
+
+5. Write a program to find the length of the string "refrigerator".
+Ans: Here's a Java program that finds the length of the string "refrigerator":
+String str = "refrigerator";
+int length = str.length(); // 12
+
+6. Write a program to check if the letter 'e' is present in the word 'Umbrella'.
+Ans: Here's a Java program that checks if the letter 'e' is present in the word 'Umbrella':
+String word = "Umbrella";
+boolean hasE = word.contains('e'); // true
+
+7. Write a program to delete all consonants from the string "Hello, have a good day".
+Ans: Here's a Java program that deletes all consonants from the string "Hello, have a good day" 
+String str = "Hello, have a good day";
+String vowelsOnly = str.replaceAll("[^aeiouAEIOU ]", ""); // "eoo, ae a ooa"
