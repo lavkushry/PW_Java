@@ -1,0 +1,36 @@
+1. What is Mutable String in Java Explain with an example
+Ans: In Java, mutable strings are represented by the StringBuilder and StringBuffer classes. Unlike String, which is immutable and cannot be changed once created, StringBuilder and StringBuffer can be modified after they are created. Here's an example:
+
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World"); // You can modify the StringBuilder
+System.out.println(sb); // Prints "Hello World"
+
+2. WAP to reverse a String
+Input: "PWSKILLS"
+Output: "SLLIKSPW"
+Ans:
+To reverse a string, you can use the reverse() method of the StringBuilder class:
+String input = "PWSKILLS";
+StringBuilder sb = new StringBuilder(input);
+sb.reverse();
+System.out.println(sb); // Prints "SLLIKSPW"
+
+3. WAP to reverse a sentence while preserving the position
+Input: Think Twice
+Output: "kniht eciwt"
+Ans:
+String sentence = "Think Twice";
+String[] words = sentence.split(" ");
+for (int i = 0; i < words.length; i++) {
+    words[i] = new StringBuilder(words[i]).reverse().toString();
+}
+String output = String.join(" ", words);
+System.out.println(output); // Prints "kniht eciwt"
+
+4. WAP to sort a String Alphabetically
+Ans: 
+String str = "UnsortedString";
+char[] chars = str.toCharArray();
+Arrays.sort(chars);
+String sorted = new String(chars);
+System.out.println(sorted); // Prints "SdeginoorsttU"
