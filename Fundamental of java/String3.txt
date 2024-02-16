@@ -1,0 +1,142 @@
+1. WAP(Write a Program) to remove Duplicates from a String.(Take any String 
+example with duplicates character)
+Ans:
+import java.util.LinkedHashSet;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "hello";
+        str = new LinkedHashSet<String>(Arrays.asList(str.split(""))).toString();
+        str = str.substring(1, str.length()-1).replace(", ", "");
+        System.out.println(str);
+    }
+}
+
+2. WAP to print Duplicates characters from the String
+Ans: 
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "hello";
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : str.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println(entry.getKey());
+            }
+        }
+    }
+}
+
+3. WAP to check it "2552" is palindrome or not.
+Ans:
+public class Main {
+    public static void main(String[] args) {
+        String str = "2552";
+        String reversed = new StringBuilder(str).reverse().toString();
+        System.out.println(str.equals(reversed));
+    }
+}
+
+4. WAP to count the number of consonants, vowels, special characters in a String.
+Ans:
+public class Main {
+    public static void main(String[] args) {
+        String str = "hello, world!";
+        int vowels = 0, consonants = 0, special = 0;
+        str = str.toLowerCase();
+        for (char c : str.toCharArray()) {
+            if (c >= 'a' && c <= 'z') {
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
+            } else if (c != ' ') {
+                special++;
+            }
+        }
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);
+        System.out.println("Special characters: " + special);
+    }
+}
+
+5. WAP to implement Anagram Checking least inbuilt methods being used.
+Ans:
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        System.out.println(Arrays.equals(arr1, arr2));
+    }
+}
+6. WAP to implement Pangram Checking with least inbuilt methods being used.
+Ans:
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "The quick brown fox jumps over the lazy dog";
+        str = str.toLowerCase().replaceAll("[^a-z]", "");
+        Set<Character> set = new HashSet<>();
+        for (char c : str.toCharArray()) {
+            set.add(c);
+        }
+        System.out.println(set.size() == 26);
+    }
+}
+
+7. WAP to find if String contains all unique characters.
+Ans: 
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "hello";
+        Set<Character> set = new HashSet<>();
+        for (char c : str.toCharArray()) {
+            if (!set.add(c)) {
+                System.out.println(false);
+                return;
+            }
+        }
+        System.out.println(true);
+    }
+}
+
+8. WAP to find the maximum occurring character in a String
+Ans:
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        String str = "hello";
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : str.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        char maxChar = ' ';
+        int maxCount = 0;
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > maxCount) {
+                maxCount = entry.getValue();
+                maxChar = entry.getKey();
+            }
+        }
+        System.out.println(maxChar);
+    }
+}
