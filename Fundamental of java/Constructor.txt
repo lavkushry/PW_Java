@@ -1,0 +1,34 @@
+1. What is a Constructor?
+Ans:A Constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+
+2. What is Constructor Chaining?
+Ans:Constructor Chaining is a technique in Java where a constructor calls another constructor in the same or parent class. This is done using this() and super() keywords.
+
+3. Can we call a subclass constructor from a superclass constructor?
+Ans:No, we cannot call a subclass constructor from a superclass constructor. The super() keyword can only call the constructor of the immediate superclass.
+
+4. What happens if you keep a return type for a constructor?
+Ans:In Java, constructors do not have a return type. If you try to declare a constructor with a return type, the compiler will treat it as a regular method.
+
+5. What is No-arg constructor?
+Ans:A No-arg constructor in Java is a constructor that does not take any arguments. It is used to provide default values for the object.
+
+6. How is a No-argument constructor different from the default Constructor?
+Ans:A No-argument constructor is a constructor explicitly provided by the programmer that takes no arguments. A default constructor is a constructor that is automatically provided by the compiler if no constructors are explicitly defined in the class. Both are no-arg constructors, but the default constructor is only provided if no other constructors are defined.
+
+7. When do we need Constructor Overloading?
+Ans:
+We need Constructor Overloading when we want to create objects in different ways. It allows us to initialize an object with different sets of data.
+
+8. What is Default constructor Explain with an Example
+Ans:A Default constructor is a constructor that is automatically provided by the compiler if no constructors are explicitly defined in the class. It takes no arguments. Here's an example:
+public class MyClass {
+    int num;
+    String name;
+
+    // This is the default constructor
+    MyClass() {
+        num = 0;
+        name = "";
+    }
+}
