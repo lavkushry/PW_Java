@@ -1,0 +1,32 @@
+1. Explain different types of Errors in Java
+Ans:
+In Java, errors are categorized into two types: Compile-time errors and Runtime errors. Compile-time errors occur when the code is being compiled, usually due to syntax errors or incorrect use of Java language rules. Runtime errors occur during the execution of the program, and these are further divided into Exceptions and Errors.
+
+2. What is an Exception in Java
+Ans:An Exception in Java is an event that disrupts the normal flow of the program. It is an object which is thrown at runtime.
+
+3. How can you handle exceptions in Java? Explain with an example
+Ans: Exceptions in Java can be handled using try, catch, and finally blocks. Here's an example:
+try {
+    // code that may throw an exception
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    // handling exception
+    System.out.println("Cannot divide by zero");
+} finally {
+    // code to be executed regardless of an exception
+    System.out.println("This will always run.");
+}
+
+4. Why do we need exception handling in Java?
+Ans:Exception handling is important in Java because it helps to maintain the normal flow of the application. An exception normally disrupts the normal flow of the application which is why we use exception handling.
+
+5. What is the difference between exception and error in Java?
+Ans:
+The main difference between an error and an exception is that an error is an irrecoverable condition occurring at runtime. Such as OutOfMemory error. These JVM errors you cannot repair them at runtime. While exceptions are conditions that occur because of bad input or human error etc. e.g. FileNotFoundException will be thrown if the specified file does not exist.
+
+6. Name the different types of exceptions in Java
+Ans:There are two types of exceptions in Java: checked exceptions (like IOException, SQLException etc) and unchecked exceptions (like ArithmeticException, ArrayIndexOutOfBoundsException, NullPointerException etc).
+
+7. Can we just use try instead of finally and catch blocks?
+Ans:No, we cannot just use a try block. A try block must be followed by either catch or finally block. A try block without a catch or finally block will give a compile-time error.
